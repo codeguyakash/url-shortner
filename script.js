@@ -36,4 +36,5 @@ copyBtn.addEventListener("click", async function () {
   await navigator.clipboard.writeText(
     document.getElementById("newUrlInput").value
   );
+  document.getElementById("svgIcon").classList.add("animate-jump");
 });

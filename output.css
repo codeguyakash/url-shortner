@@ -774,6 +774,35 @@ video {
   width: 10rem;
 }
 
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes jump{
+  0%, 100%{
+    transform: scale(100%);
+  }
+
+  10%{
+    transform: scale(80%);
+  }
+
+  50%{
+    transform: scale(120%);
+  }
+}
+
+.animate-jump{
+  animation: jump .5s both;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1141,6 +1170,10 @@ video {
 
 .underline{
   text-decoration-line: underline;
+}
+
+.animate-once{
+  animation-iteration-count: 1;
 }
 
 * {
