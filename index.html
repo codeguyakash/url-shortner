@@ -7,7 +7,61 @@
     <title>URL-Short</title>
   </head>
   <body>
-    <h1>@codeguyakash</h1>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <section
+      class="h-screen w-auto flex flex-col items-center justify-center mx-8"
+    >
+      <h1 class="text-zinc-300 text-4xl sm:text-6xl md:text-9xl font-bold">
+        URL Shortner
+      </h1>
+      <div class="mt-10 md:w-1/2 w-full">
+        <input
+          name="url"
+          id="urlInput"
+          type="text"
+          value="https://www.youtube.com/watch?v=Beozx9pUajA"
+          placeholder="Paste your long url here..."
+          class="text-[#52525b] text-1xl rounded-md bg-transparent w-full py-4 px-6 border border-[#52525b] mt-5"
+        />
+
+        <button
+          id="shortBtn"
+          class="text-1xl font-normal rounded-md bg-zinc-300 w-full py-4 px-6 border my-5"
+        >
+          SHORT URL
+        </button>
+        <div
+          id="copyBtnDiv"
+          class="hidden bg-transparent h-14 border border-[#52525b] flex justify-between rounded-md"
+        >
+          <input
+            type="text"
+            id="newUrlInput"
+            class="bg-transparent w-full px-6 py-4 text-[#52525b] text-1xl"
+          /><span
+            id="copyBtn"
+            class="bg-zinc-300 text-black text-1xl font-normal px-6 py-4 rounded-tr-md rounded-br-md cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-clipboard"
+            >
+              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+              <path
+                d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
