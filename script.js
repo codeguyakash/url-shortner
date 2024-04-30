@@ -24,7 +24,7 @@ shortBtn.addEventListener("click", function () {
 
 async function postData(url, options) {
   shortBtn.innerText = "Loading...";
-  showMsg.innerText = "Loading...";
+  showMsg.innerText = "Please wait...";
 
   shortBtn.disabled = true;
   const response = await fetch(url, options);
