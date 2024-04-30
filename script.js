@@ -35,8 +35,8 @@ async function postData(url, options) {
 }
 copyBtn.addEventListener("click", async function () {
   await navigator.clipboard.writeText(
-    document.getElementById("newUrlInput").value,
-    (document.getElementById("copyBtn").innerText = "COPIED!!"),
-    console.log("okkk")
+    document.getElementById("newUrlInput").value
   );
+  document.getElementById("copyBtn").innerText = "COPIED!!";
+  console.log("COPIED!!");
 });
