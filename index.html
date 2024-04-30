@@ -49,10 +49,11 @@
     <section
       class="h-[90vh] w-auto flex flex-col items-center justify-center mx-8"
     >
-      <h1 class="text-zinc-300 text-4xl sm:text-6xl md:text-9xl font-bold">
+      <h1 class="text-zinc-300 text-center text-4xl sm:text-6xl md:text-9xl font-bold">
         URL Shortner
       </h1>
       <div class="mt-10 md:w-1/2 w-full">
+        <h3 class="text-zinc-300 text-1xl text-center" id="showMsg"></h3>
         <input
           name="url"
           id="urlInput"
@@ -63,7 +64,8 @@
 
         <button
           id="shortBtn"
-          class="text-1xl font-normal rounded-md bg-zinc-300 w-full py-4 px-6 border my-5"
+          disabled
+          class="text-1xl font-normalrounded-md bg-zinc-300 w-full py-4 px-6 border my-5"
         >
           SHORT URL
         </button>
@@ -79,7 +81,7 @@
             id="copyBtn"
             class="bg-zinc-300 text-black text-1xl font-normal px-6 py-4 rounded-tr-md rounded-br-md cursor-pointer"
           >
-           COPY
+            COPY
           </span>
         </div>
       </div>
