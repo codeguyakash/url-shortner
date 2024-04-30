@@ -1,8 +1,8 @@
 const shortBtn = document.getElementById("shortBtn");
 const copyBtn = document.getElementById("copyBtn");
 const copyBtnDiv = document.getElementById("copyBtnDiv");
-// const api_url = "https://url.codeguyakash.me";
-const api_url = "http://localhost:5432";
+const api_url = "https://url.codeguyakash.me";
+// const api_url = "http://localhost:5432";
 
 shortBtn.addEventListener("click", function () {
   const urlInputValue = document.getElementById("urlInput").value;
