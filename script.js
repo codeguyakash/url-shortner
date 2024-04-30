@@ -1,7 +1,8 @@
 const shortBtn = document.getElementById("shortBtn");
 const copyBtn = document.getElementById("copyBtn");
 const copyBtnDiv = document.getElementById("copyBtnDiv");
-const api_url = "https://url.codeguyakash.me";
+// const api_url = "https://url.codeguyakash.me";
+const api_url = "http://localhost:5432";
 
 shortBtn.addEventListener("click", function () {
   const urlInputValue = document.getElementById("urlInput").value;
@@ -34,7 +35,8 @@ async function postData(url, options) {
 }
 copyBtn.addEventListener("click", async function () {
   await navigator.clipboard.writeText(
-    document.getElementById("newUrlInput").value
+    document.getElementById("newUrlInput").value,
+    (document.getElementById("copyBtn").innerText = "COPIED!!"),
+    console.log("okkk")
   );
-  document.getElementById("svgIcon").classList.add("animate-jump");
 });
