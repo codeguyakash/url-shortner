@@ -14,7 +14,6 @@
     />
     <meta name="author" content="Your Name or Company Name" />
     <title>Your URL Shortener Tool</title>
-    <!-- Add Open Graph meta tags for better sharing on social media -->
     <meta property="og:title" content="Your URL Shortener Tool" />
     <meta
       property="og:description"
@@ -23,7 +22,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://srturl.codeguyakash.me/" />
     <meta property="og:image" content="https://srturl.codeguyakash.me/" />
-    <!-- Add Twitter Card meta tags for better sharing on Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Your URL Shortener Tool" />
     <meta
@@ -31,7 +29,6 @@
       content="Simplify your links with our URL shortener! Built with Node, Express, MongoDB, HTML, Tailwind CSS, and JavaScript."
     />
     <meta name="twitter:image" content="https://srturl.codeguyakash.me/" />
-    <!-- Add canonical URL -->
     <link rel="canonical" href="https://srturl.codeguyakash.me/" />
     <meta
       name="google-site-verification"
@@ -41,19 +38,16 @@
     <title>🔗 URL Shortner</title>
   </head>
   <body>
-    <!-- <h3
-      class="text-[#27272742] absolute text-[10rem] z-[-10] overflow-hidden text-center font-bold -tracking-[10px]"
-    >
-      CODEGUYAKASH
-    </h3> -->
     <section
       class="h-[90vh] w-auto flex flex-col items-center justify-center mx-8"
     >
-      <h1 class="text-zinc-300 text-center text-4xl sm:text-6xl md:text-9xl font-bold">
+      <h1
+        class="text-zinc-300 text-center text-4xl sm:text-6xl md:text-9xl font-bold"
+      >
         URL Shortner
       </h1>
-      <div class="mt-10 md:w-1/2 w-full">
-        <h3 class="text-zinc-300 text-1xl text-center" id="showMsg"></h3>
+      <div class="mt-5 md:w-1/2 w-full">
+        <h3 class="text-zinc-300 text-1xl text-center mt-5" id="showMsg"></h3>
         <input
           name="url"
           id="urlInput"
@@ -61,11 +55,10 @@
           placeholder="Paste your long url here..."
           class="text-[#52525b] text-1xl rounded-md bg-transparent w-full py-4 px-6 border border-[#52525b] mt-5"
         />
-
         <button
           id="shortBtn"
           disabled
-          class="text-1xl font-normalrounded-md bg-zinc-300 w-full py-4 px-6 border my-5"
+          class="text-1xl font-normal rounded-md bg-zinc-300 w-full py-4 px-6 border my-5"
         >
           SHORT URL
         </button>
