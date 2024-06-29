@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
     <meta
       name="description"
       content="Simplify your links with our URL shortener! Built with Node, Express, MongoDB, HTML, Tailwind CSS, and JavaScript."
@@ -12,30 +12,21 @@
       name="keywords"
       content="URL shortener, link shortener, NodeJS, Express, MongoDB, HTML, Tailwind CSS, JavaScript"
     />
-    <meta name="author" content="Your Name or Company Name" />
-    <title>Your URL Shortener Tool</title>
+    <meta name="author" content="Akash(codeguyakash)" />
     <meta property="og:title" content="Your URL Shortener Tool" />
     <meta
       property="og:description"
-      content="Simplify your links with our URL shortener! Built with Node, Express, MongoDB, HTML, Tailwind CSS, and JavaScript."
+      content="Simplify your links with our URL shortener!"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://srturl.codeguyakash.me/" />
-    <meta property="og:image" content="https://srturl.codeguyakash.me/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Your URL Shortener Tool" />
     <meta
-      name="twitter:description"
-      content="Simplify your links with our URL shortener! Built with Node, Express, MongoDB, HTML, Tailwind CSS, and JavaScript."
+      property="og:image"
+      content="https://srturl.codeguyakash.me/og-image.png"
     />
-    <meta name="twitter:image" content="https://srturl.codeguyakash.me/" />
     <link rel="canonical" href="https://srturl.codeguyakash.me/" />
-    <meta
-      name="google-site-verification"
-      content="Cvv464XYmbWGDUozX_mRq5NYiK_pB6KlsjY0oLU-25Q"
-    />
     <link href="output.css" rel="stylesheet" />
-    <title>🔗 URL Shortner</title>
+    <title>🔗 URL Shortener</title>
   </head>
   <body>
     <section
@@ -44,7 +35,7 @@
       <h1
         class="text-zinc-300 text-center text-4xl sm:text-6xl md:text-9xl font-bold"
       >
-        URL Shortner
+        URL Shortener
       </h1>
       <div class="mt-5 md:w-1/2 w-full">
         <h3 class="text-zinc-300 text-1xl text-center mt-5" id="showMsg"></h3>
@@ -70,7 +61,8 @@
             type="text"
             id="newUrlInput"
             class="bg-transparent w-full px-6 py-4 text-[#52525b] text-1xl"
-          /><span
+          />
+          <span
             id="copyBtn"
             class="bg-zinc-300 text-black text-1xl font-normal px-6 py-4 rounded-tr-md rounded-br-md cursor-pointer"
           >
